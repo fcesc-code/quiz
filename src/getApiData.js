@@ -2,6 +2,7 @@ import CONFIG_DATA from "./config/CONFIG_DATA";
 import getEndpoint from "./utils/getEndPoint";
 import simpleDecoder from "./utils/simpleDecoder";
 
+// eslint-disable-next-line
 export default async function getApiData(
   category = "all",
   difficulty = "all",

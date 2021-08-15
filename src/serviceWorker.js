@@ -54,6 +54,7 @@ export function register(config) {
   }
 }
 
+/* eslint-disable */
 function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
@@ -97,6 +98,7 @@ function registerValidSW(swUrl, config) {
       console.error("Error during service worker registration:", error);
     });
 }
+/* eslint-enable */
 
 function checkValidServiceWorker(swUrl, config) {
   // Check if the service worker can be found. If it can't reload the page.
