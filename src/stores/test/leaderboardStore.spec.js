@@ -1,45 +1,43 @@
-import actionTypes from '../../actions/actionTypes'
-import dispatcher from './../../dispatcher';
-import leaderboardStore from '../leaderboardStore';
-import LEADERBOARD from './../../mockdata/Leaderboard'
+import actionTypes from "../../actions/actionTypes";
+import dispatcher from "../../dispatcher";
+import leaderboardStore from "../leaderboardStore";
+import LEADERBOARD from "../../mockdata/Leaderboard";
 
-describe('leaderboardStore',()=>{
-    let action;
-    let myCallbackMockFunction;
+describe("leaderboardStore", () => {
+  let action;
+  let myCallbackMockFunction;
 
-    function reduceAction (actionType, data){
-        return {
-            type: actionType,
-            data
-        }
-    }
+  function reduceAction(actionType, data) {
+    return {
+      type: actionType,
+      data,
+    };
+  }
 
-    beforeEach(()=>{
-        myCallbackMockFunction = jest.fn();
-        leaderboardStore.addChangeListener(myCallbackMockFunction);
+  beforeEach(() => {
+    myCallbackMockFunction = jest.fn();
+    leaderboardStore.addChangeListener(myCallbackMockFunction);
 
-        action = reduceAction(actionTypes.GET_LEADERBOARD, [{
-            
-            data: LEADERBOARD
-        }]);
-        
-        dispatcher.dispatch(action);
-    })
+    action = reduceAction(actionTypes.GET_LEADERBOARD, [
+      {
+        data: LEADERBOARD,
+      },
+    ]);
 
-    afterEach(()=>{
-        leaderboardStore.removeChangeListener(myCallbackMockFunction);
-    })
+    dispatcher.dispatch(action);
+  });
 
-    it('should create leaderboardStore',()=>{
-        expect(leaderboardStore).toBeDefined();
-    })
+  afterEach(() => {
+    leaderboardStore.removeChangeListener(myCallbackMockFunction);
+  });
 
-    it('should register GET_LEADERBOARD', () => {
-        const request = leaderboardStore.getLeaderboard();
-        console.log(request)
-        expect(request).toEqual(action.data);
-    });
+  it("should create leaderboardStore", () => {
+    expect(leaderboardStore).toBeDefined();
+  });
 
-})
-
-
+  it("should register GET_LEADERBOARD", () => {
+    const request = leaderboardStore.getLeaderboard();
+    console.log(request);
+    expect(request).toEqual(action.data);
+  });
+});

@@ -1,47 +1,44 @@
-import actionTypes from './../../actions/actionTypes'
-import dispatcher from './../../dispatcher';
-import questionStore from '../questionStore';
-import QUESTIONS_SESSION from './../../mockdata/QUESTION_SESSION'
+import actionTypes from "../../actions/actionTypes";
+import dispatcher from "../../dispatcher";
+import questionStore from "../questionStore";
+import QUESTIONS_SESSION from "../../mockdata/QUESTION_SESSION";
 
-describe('questionStore',()=>{
-    let action;
-    let myCallbackMockFunction;
+describe("questionStore", () => {
+  let action;
+  let myCallbackMockFunction;
 
-    function reduceAction (actionType, data){
-        return {
-            type: actionType,
-            data
-        }
-    }
+  function reduceAction(actionType, data) {
+    return {
+      type: actionType,
+      data,
+    };
+  }
 
-    beforeEach(()=>{
-        myCallbackMockFunction = jest.fn();
-        questionStore.addChangeListener(myCallbackMockFunction);
+  beforeEach(() => {
+    myCallbackMockFunction = jest.fn();
+    questionStore.addChangeListener(myCallbackMockFunction);
 
-        action = reduceAction(actionTypes.GET_QUESTION, [{
-            
-            data: QUESTIONS_SESSION
-        }]);
-        
-        dispatcher.dispatch(action);
-    })
+    action = reduceAction(actionTypes.GET_QUESTION, [
+      {
+        data: QUESTIONS_SESSION,
+      },
+    ]);
 
-    afterEach(()=>{
-        questionStore.removeChangeListener(myCallbackMockFunction);
-    })
+    dispatcher.dispatch(action);
+  });
 
-    it('should create',() =>{
-        expect(questionStore).toBeDefined();
-    })
+  afterEach(() => {
+    questionStore.removeChangeListener(myCallbackMockFunction);
+  });
 
-    fit('should register a question', () => {
-        const request = questionStore.getQuestion();
-        dispatcher.dispatch(action)
-        console.log(request)
-        expect(request).toEqual(action.data);
-    });
-  
+  it("should create", () => {
+    expect(questionStore).toBeDefined();
+  });
 
-})
-
-
+  fit("should register a question", () => {
+    const request = questionStore.getQuestion();
+    dispatcher.dispatch(action);
+    console.log(request);
+    expect(request).toEqual(action.data);
+  });
+});
