@@ -89,8 +89,7 @@ The build is minified and the filenames include the hashes.<br />
 
 The quiz project was born as a team activity in our _[Skylab](https://www.skylabcoders.com/es/)-bootcamp-202007_. \
 Special thanks to [Gilberto Cao](https://linkedin.com/in/gilbecao). \
-
-This project was created by [Francesc Brugarolas](https://linkedin.com/in/francescbrugarolas) and [Victor Alemany](https://es.linkedin.com/in/victor-alemany-sancho). \
+This project was created by [Francesc Brugarolas](https://linkedin.com/in/francescbrugarolas) and [Victor Alemany](https://es.linkedin.com/in/victor-alemany-sancho).
 
 August 2020. \
 Latest update: August 2021.
