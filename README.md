@@ -60,6 +60,7 @@ Initial release.
 - Accessibility Validator: \
 - [Jest](https://jest.io/): 50 tests passed | 12 snapshots passed | coverage: \
   | statements | branches | lines | functions |
+  | ---------- | -------- | ----- | --------- |
   | 49.9% | 29.08% | 49.39% | 40.51% |
 - [Sonarqube](https://www.sonarqube.org/): 0 bugs | 0 code smells | 0 vulnerabilities | 2 security hotspots | 0% code duplication (excluding duplicated API file requested to separate deliverables) \
 - [GitHub codeQL](https://github.com/github/codeql): 0 security alerts
