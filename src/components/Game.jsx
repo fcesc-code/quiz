@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import gameStore from "../stores/gameStore";
 import { loadSessionSet } from "../actions/gameActions";
 import THEMES_LIST from "../mockdata/THEMES_LIST";
@@ -140,7 +141,6 @@ function Game(props) {
     }
     if (counter >= sessionSet.length) {
       updateGameStatistics();
-      console.log(sessionSet, counter);
       return (
         <>
           <Results
@@ -166,5 +166,9 @@ function Game(props) {
     </>
   );
 }
+
+Game.propTypes = {
+  match: PropTypes.object,
+};
 
 export default Game;
