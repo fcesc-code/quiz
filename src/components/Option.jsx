@@ -15,7 +15,7 @@ function Option(props) {
 
 Option.propTypes = {
   answer: PropTypes.func,
-  option: PropTypes.array,
+  option: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
 };
 
 export default Option;
