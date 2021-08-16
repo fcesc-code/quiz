@@ -18,6 +18,7 @@ function Item(props) {
             src={props.themeImgurl}
             alt={props.themeTitle}
             loading="lazy"
+            sizes="auto"
           ></img>
           <h2 className="img__title">{props.themeTitle}</h2>
         </div>
