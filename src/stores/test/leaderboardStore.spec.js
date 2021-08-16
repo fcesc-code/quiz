@@ -18,7 +18,7 @@ describe("leaderboardStore", () => {
     myCallbackMockFunction = jest.fn();
     leaderboardStore.addChangeListener(myCallbackMockFunction);
 
-    action = reduceAction(actionTypes.GET_LEADERBOARD, [
+    action = reduceAction(actionTypes.LEADERBOARD.GET_LEADERBOARD, [
       {
         data: LEADERBOARD,
       },

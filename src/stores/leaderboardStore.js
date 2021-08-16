@@ -31,11 +31,11 @@ export default leaderboardStore;
 
 dispatcher.register((action) => {
   switch (action.type) {
-    case actionTypes.GET_LEADERBOARD:
+    case actionTypes.LEADERBOARD.GET_LEADERBOARD:
       _leaderboard = action.data;
       leaderboardStore.emitChange(_leaderboard);
       break;
-    case actionTypes.ADD_RESULTS:
+    case actionTypes.LEADERBOARD.ADD_RESULTS:
       _leaderboard = [..._leaderboard, { ...action.data }];
       leaderboardStore.emitChange(sortResults(_leaderboard));
       break;

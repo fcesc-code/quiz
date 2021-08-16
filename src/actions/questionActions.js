@@ -5,7 +5,7 @@ function loadQuestion(i) {
   const result = i;
 
   dispatcher.dispatch({
-    type: actionTypes.GET_QUESTION_FROM_SESSION,
+    type: actionTypes.SESSION.GET_QUESTION_FROM_SESSION,
     data: result,
   });
 }

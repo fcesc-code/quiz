@@ -8,8 +8,10 @@ describe("Test set for leaderboard actions", () => {
     loadLeaderboard();
     const leaderboard = leaderboardStore.getLeaderboard();
     const result = LEADERBOARD;
+
     expect(leaderboard).toEqual(result);
   });
+
   test("testing leaderboard saveResults action", () => {
     loadLeaderboard();
     const leaderboard = leaderboardStore.getLeaderboard();
@@ -17,6 +19,7 @@ describe("Test set for leaderboard actions", () => {
     const result = sortResults([...leaderboard, newPlayerInLeaderboard]);
     saveResults(newPlayerInLeaderboard);
     const newLeaderboard = sortResults(leaderboardStore.getLeaderboard());
+
     expect(newLeaderboard).toEqual(result);
   });
 });

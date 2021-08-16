@@ -18,7 +18,7 @@ describe("gameStore", () => {
     myCallbackMockFunction = jest.fn();
     gameStore.addChangeListener(myCallbackMockFunction);
 
-    action = reduceAction(actionTypes.GET_THEMES, {
+    action = reduceAction(actionTypes.GAME.GET_THEMES, {
       data: THEMES_LIST,
     });
 

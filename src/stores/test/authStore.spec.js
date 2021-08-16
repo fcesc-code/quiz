@@ -24,13 +24,13 @@ beforeEach(() => {
   mockCallback = jest.fn();
   authStore.addChangeListener(mockCallback);
 
-  action = reduceAction(actionTypes.LOGIN, [
+  action = reduceAction(actionTypes.USER.LOGIN, [
     {
       data: "prueba",
     },
   ]);
 
-  actionSecondary = reduceAction(actionTypes.LOGOUT, [
+  actionSecondary = reduceAction(actionTypes.USER.LOGOUT, [
     {
       data: "prueba",
     },

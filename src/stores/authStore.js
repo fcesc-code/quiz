@@ -40,13 +40,13 @@ export default authStore;
 
 dispatcher.register((action) => {
   switch (action.type) {
-    case actionTypes.LOGIN:
+    case actionTypes.USER.LOGIN:
       // console.log('STORE registering action from dispatcher: LOGIN with data:', action.data);
       _SESSION_DATA.userProfile = action.data;
       _SESSION_DATA.isLogged = !!action.data;
       authStore.emitChange();
       break;
-    case actionTypes.LOGOUT:
+    case actionTypes.USER.LOGOUT:
       // console.log('STORE registering action from dispatcher: LOGOUT');
       _SESSION_DATA.isLogged = false;
       _SESSION_DATA.userProfile = "";

@@ -9,7 +9,7 @@ export function login(email, password) {
     .then((data) => {
       // console.log('-> .then of login function in authActions with data:', data);
       dispatcher.dispatch({
-        type: actionTypes.LOGIN,
+        type: actionTypes.USER.LOGIN,
         data,
       });
     })
@@ -30,7 +30,7 @@ export function loginGoogle() {
       // console.log('-> .specifically, the access token is:', data.credential.accessToken);
       // console.log('-> .specifically, the user is:', data.user);
       dispatcher.dispatch({
-        type: actionTypes.LOGIN,
+        type: actionTypes.USER.LOGIN,
         data,
       });
     })
@@ -49,7 +49,7 @@ export function logout() {
   })
     .then(() => {
       dispatcher.dispatch({
-        type: actionTypes.LOGOUT,
+        type: actionTypes.USER.LOGOUT,
       });
     })
     .catch((error) => {

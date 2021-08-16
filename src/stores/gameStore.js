@@ -47,19 +47,19 @@ export default gameStore;
 
 dispatcher.register((action) => {
   switch (action.type) {
-    case actionTypes.GET_THEMES:
+    case actionTypes.GAME.GET_THEMES:
       _themesList = action.data;
       gameStore.emitChange(_themesList);
       break;
-    case actionTypes.GET_TOP_THEMES:
+    case actionTypes.GAME.GET_TOP_THEMES:
       _topThemesList = action.data;
       gameStore.emitChange(_topThemesList);
       break;
-    case actionTypes.GET_SESSION_SET:
+    case actionTypes.SESSION.GET_SESSION_SET:
       _sessionSet = action.data;
       gameStore.emitChange(_sessionSet);
       break;
-    case actionTypes.GET_QUESTION_FROM_SESSION:
+    case actionTypes.SESSION.GET_QUESTION_FROM_SESSION:
       _index = action.data;
       gameStore.emitChange(_index);
       break;

@@ -24,13 +24,13 @@ beforeEach(() => {
   mockCallback = jest.fn();
   userStore.addChangeListener(mockCallback);
 
-  action = reduceAction(actionTypes.GET_USER_DATA, [
+  action = reduceAction(actionTypes.USER.GET_USER_DATA, [
     {
       data: "prueba",
     },
   ]);
 
-  actionSecondary = reduceAction(actionTypes.UPDATE_USER_DATA, [
+  actionSecondary = reduceAction(actionTypes.USER.UPDATE_USER_DATA, [
     {
       data: "prueba",
     },

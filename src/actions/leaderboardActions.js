@@ -6,14 +6,14 @@ export function loadLeaderboard() {
   const result = LEADERBOARD;
 
   dispatcher.dispatch({
-    type: actionTypes.GET_LEADERBOARD,
+    type: actionTypes.LEADERBOARD.GET_LEADERBOARD,
     data: result,
   });
 }
 
 export function saveResults(value) {
   dispatcher.dispatch({
-    type: actionTypes.ADD_RESULTS,
+    type: actionTypes.LEADERBOARD.ADD_RESULTS,
     data: value,
   });
 }
