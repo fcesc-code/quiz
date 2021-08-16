@@ -16,7 +16,8 @@ function Item(props) {
           <img
             className="img__item"
             src={props.themeImgurl}
-            alt="item theme"
+            alt={props.themeTitle}
+            loading="lazy"
           ></img>
           <h2 className="img__title">{props.themeTitle}</h2>
         </div>
