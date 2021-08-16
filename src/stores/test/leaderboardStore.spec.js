@@ -37,7 +37,6 @@ describe("leaderboardStore", () => {
 
   it("should register GET_LEADERBOARD", () => {
     const request = leaderboardStore.getLeaderboard();
-    console.log(request);
     expect(request).toEqual(action.data);
   });
 });

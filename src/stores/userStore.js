@@ -25,11 +25,11 @@ export default userStore;
 dispatcher.register((action) => {
   switch (action.type) {
     case actionTypes.GET_USER_DATA:
-      console.log("GET_USER_DATA ACTION ENTERING IN USER STORE");
+      // console.log("GET_USER_DATA ACTION ENTERING IN USER STORE");
       userStore.emitChange();
       break;
     case actionTypes.UPDATE_USER_DATA:
-      console.log("UPDATE_USER_DATA ACTION ENTERING IN USER STORE");
+      // console.log("UPDATE_USER_DATA ACTION ENTERING IN USER STORE");
       userStore.emitChange();
       break;
     default:

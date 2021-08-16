@@ -1,12 +1,13 @@
+import getRandomIntInclusive from "../utils/randomizer";
+
 describe("Test set for randomizer", () => {
   test("should return an integer between 0 and n", () => {
-    const n = 20;
-    const { random } = Math;
-    const number = Math.floor(random() * n);
-    const intgerPartOfNumber = parseInt(number, 10);
-    const modulo = number % intgerPartOfNumber;
-    expect(number).toBeGreaterThanOrEqual(0);
-    expect(number).toBeLessThanOrEqual(n);
-    expect(modulo).toBe(0);
+    const nMax = 20;
+    const nMin = 0;
+
+    const result = getRandomIntInclusive(nMin, nMax);
+    expect(result).toBeGreaterThanOrEqual(nMin);
+    expect(result).toBeLessThanOrEqual(nMax);
+    expect(typeof result).toBe("number");
   });
 });

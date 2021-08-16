@@ -38,7 +38,6 @@ describe("questionStore", () => {
   fit("should register a question", () => {
     const request = questionStore.getQuestion();
     dispatcher.dispatch(action);
-    console.log(request);
     expect(request).toEqual(action.data);
   });
 });
