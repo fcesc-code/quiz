@@ -6,7 +6,8 @@ function Footer() {
     <>
       <div className="footer">
         <p>
-          Created by Francesc & Victor for{" "}
+          Created by <a href="https://github.com/fcesc-code">Francesc</a> &
+          Victor for{" "}
           <a href="https://www.skylabcoders.com/es/">Skylab Coders</a> Bootcamp
         </p>
       </div>
