@@ -31,7 +31,7 @@ prueba/
 
 #firebase
 .firebaserc
-firebase.json
+#firebase.json
 .firebase/
 firebaseinit.js
 
