@@ -17,6 +17,7 @@ describe("Test set for action loadQuestion", () => {
     loadQuestion(mockIndex);
     const expected = gameStore.getQuestion(mockIndex);
     const result = gameStore.getSessionSet()[mockIndex];
+
     expect(expected).toBe(result);
   });
 });

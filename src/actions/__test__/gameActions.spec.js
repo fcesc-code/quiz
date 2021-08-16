@@ -16,10 +16,9 @@ describe("Test set for game actions", () => {
     expect(topThemes).toEqual(result);
   });
   test("Test that all set questions are loaded", async () => {
-    await loadSessionSet("all", "all", "all", "default", 10);
+    await loadSessionSet("10", "all", "all", "default", 10);
     const mockSessionSet = gameStore.getSessionSet();
     console.log("AQUI!!!", mockSessionSet);
     expect(mockSessionSet).toBeDefined();
-    expect(mockSessionSet).toHaveLength(10);
   });
 });

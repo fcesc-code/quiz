@@ -55,7 +55,7 @@ dispatcher.register((action) => {
       _topThemesList = action.data;
       gameStore.emitChange(_topThemesList);
       break;
-    case actionTypes.GET_sessionSet:
+    case actionTypes.GET_SESSION_SET:
       _sessionSet = action.data;
       gameStore.emitChange(_sessionSet);
       break;
