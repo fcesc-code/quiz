@@ -224,7 +224,7 @@ function Question(props) {
 
 Question.propTypes = {
   i: PropTypes.number,
-  click: PropTypes.bool,
+  click: PropTypes.func,
 };
 
 export default Question;

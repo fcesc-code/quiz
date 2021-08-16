@@ -78,7 +78,7 @@ function Results(props) {
 }
 
 Results.propTypes = {
-  newGameClick: PropTypes.bool,
+  newGameClick: PropTypes.func,
   data_questions_total: PropTypes.number,
   data_right: PropTypes.number,
   data_wrong: PropTypes.number,
