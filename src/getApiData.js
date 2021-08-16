@@ -33,5 +33,6 @@ export default async function getApiData(
     return result;
   } catch (err) {
     console.log("Fetch failed", err);
+    return [];
   }
 }
