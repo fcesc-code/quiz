@@ -45,7 +45,7 @@ function Game(props) {
     return () => {
       gameStore.removeChangeListener(onChangeSessionSet);
     };
-  }, [sessionSet, themeSlug]);
+  }, [sessionSet, themeSlug, themeId]);
 
   function onChangeSessionSet() {
     setSessionSet(gameStore.getSessionSet());

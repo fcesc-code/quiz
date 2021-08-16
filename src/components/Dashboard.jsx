@@ -21,7 +21,7 @@ function Dashboard() {
     return () => {
       gameStore.removeChangeListener(onChangeThemes);
     };
-  }, []);
+  }, [themesList]);
 
   useEffect(() => {
     gameStore.addChangeListener(onChangeTopThemes);
@@ -31,7 +31,7 @@ function Dashboard() {
     return () => {
       gameStore.removeChangeListener(onChangeTopThemes);
     };
-  }, []);
+  }, [topThemesList]);
 
   useEffect(() => {
     gameStore.addChangeListener(onChangeSessionSet);

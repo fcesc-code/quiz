@@ -18,6 +18,10 @@ function Question(props) {
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
+    function onChange() {
+      setQuestion(gameStore.getQuestion(props.i));
+    }
+
     gameStore.addChangeListener(onChange);
     loadQuestion(props.i);
     return () => {
@@ -26,6 +30,10 @@ function Question(props) {
   }, [props.i]);
 
   useEffect(() => {
+    function onChange() {
+      setQuestion(gameStore.getQuestion(props.i));
+    }
+
     gameStore.addChangeListener(onChange);
     setResultat("");
     return () => {
@@ -34,6 +42,10 @@ function Question(props) {
   }, [props.i]);
 
   useEffect(() => {
+    function onChange() {
+      setQuestion(gameStore.getQuestion(props.i));
+    }
+
     gameStore.addChangeListener(onChange);
     setClicked(false);
     return () => {
@@ -42,16 +54,16 @@ function Question(props) {
   }, [props.i]);
 
   useEffect(() => {
+    function onChange() {
+      setQuestion(gameStore.getQuestion(props.i));
+    }
+
     gameStore.addChangeListener(onChange);
     setTimerIsOn(true);
     return () => {
       gameStore.removeChangeListener(onChange);
     };
   }, [props.i]);
-
-  function onChange() {
-    setQuestion(gameStore.getQuestion(props.i));
-  }
 
   function getValue(value, listenClick) {
     if (timerIsOn) {
