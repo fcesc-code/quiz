@@ -39,7 +39,6 @@ function LoginScreen() {
           </div>
           <div className="login__right__container">
             <div className="login">
-              <h1>Login</h1>
               <form method="post" action="">
                 <input
                   className="input__item"
@@ -81,7 +80,7 @@ function LoginScreen() {
                         login(MOCKUSER.email, MOCKUSER.password);
                       }}
                     >
-                      Login
+                      Sign in with email and password
                     </button>
                   )}
                   {!isLogged && (
@@ -96,7 +95,7 @@ function LoginScreen() {
                   )}
                   {isLogged && (
                     <button onClick={() => logout()}>
-                      Logout {user.email}
+                      Sign out {user.email}
                     </button>
                   )}
                 </div>

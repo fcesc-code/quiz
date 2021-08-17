@@ -9,16 +9,17 @@ describe("Test set for game actions", () => {
     const result = THEMES_LIST;
     expect(themes).toBe(result);
   });
+
   test("Test that all top themes are loaded", () => {
     loadTopThemes();
     const topThemes = gameStore.getTopThemes();
     const result = THEMES_LIST.slice(0, 5);
     expect(topThemes).toEqual(result);
   });
+
   test("Test that all set questions are loaded", async () => {
     await loadSessionSet("10", "all", "all", "default", 10);
     const mockSessionSet = gameStore.getSessionSet();
-    console.log("AQUI!!!", mockSessionSet);
     expect(mockSessionSet).toBeDefined();
   });
 });
