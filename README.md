@@ -39,17 +39,18 @@ A Git repository can be found at https://github.com/fcesc-code/quiz.git
 
 ### Version 0.2.0
 
-1. Include a component to notify UI when there is no internet connection or API throws an error
-2. Limit maximum calls of API when error is thrown or connection is broken
-3. Load mockdata to local run app when there is no internet connection
-4. Include GitHub Actions to launch testing for continuous delivery
-5. Lazy loading and optimized image source set for all components
-6. Create database and backend app to store user and leaderboard results
-7. Integrate backend data to the app
-8. Change Flux for Redux to reduce boilerplate
-9. Increase testing coverage
-10. Include GitHub Actions for continuous deployment in firebase
-11. Optimize responsive design and accessibility of the site
+1. ❌ Include a component to notify UI when there is no internet connection or API throws an error
+2. ❌ Limit maximum calls of API when error is thrown or connection is broken
+3. ❌ Load mockdata to local run app when there is no internet connection
+4. ✔️ Include GitHub Actions to launch testing for continuous delivery
+5. ✔️ Lazy loading and ❌ optimized image source set for all components
+6. ❌ Create database and ❌ backend app to store user and leaderboard results
+7. ❌ Integrate backend data to the app
+8. ✔️ Increase testing coverage
+9. ❌ Include GitHub Actions for continuous deployment in firebase
+10. ❌ Optimize responsive design and ❌ accessibility of the site
+
+_Ticks indicate current development status of each task_
 
 ### Version 0.1.0
 
@@ -65,7 +66,7 @@ Initial release.
   | ---------- | -------- | ----- | --------- |
   | 94.36% | 86.05% | 92.00% | 94.24% |
 - [Sonarqube](https://www.sonarqube.org/): 0 bugs | 0 code smells | 0 vulnerabilities | 2 security hotspots | 0% code duplication (excluding duplicated API file requested to separate deliverables) \
-- [GitHub codeQL](https://github.com/github/codeql): 0 security alerts
+- [GitHub codeQL](https://github.com/github/codeql): 0 security alerts [![CodeQL](https://github.com/fcesc-code/quiz/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/fcesc-code/quiz/actions/workflows/codeql-analysis.yml)
 
 ## Available Scripts
 
