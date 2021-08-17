@@ -61,7 +61,7 @@ Initial release.
 - [HTML Validator](https://jigsaw.w3.org/css-validator/): 0 errors | 0 warnings \
 - [CSS Validator](https://jigsaw.w3.org/css-validator/validator): 0 errors | 0 warnings \
 - Accessibility Validator: \
-- [Jest](https://jest.io/): 57 tests passed | 15 snapshots passed | coverage: \
+- [Jest](https://jest.io/): 57 tests passed | 15 snapshots passed | [![Testing](https://github.com/fcesc-code/quiz/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/fcesc-code/quiz/actions/workflows/node.js.yml) | coverage: \
   | statements | branches | lines | functions |
   | ---------- | -------- | ----- | --------- |
   | 94.36% | 86.05% | 92.00% | 94.24% |
