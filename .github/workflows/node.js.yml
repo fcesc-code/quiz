@@ -31,6 +31,8 @@ jobs:
           path: ~/.npm
           key: npm-${{ hashFiles('package-lock.json') }}
           restore-keys: npm-
+      - name: Install Dependencies
+        run: npm ci --ignore-scripts
       - name: Run tests
         run: npm test
         env:
