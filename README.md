@@ -6,6 +6,8 @@ Play our free [online quiz](https://quiz-1bc14.web.app/). \
 The project is based on this [open trivia](opentdb.com/api.php) api. The Open Trivia Database provides a completely free JSON API for use in programming projects. \
 The data provided by the API is available under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
+![](public/application.webp)
+
 ## Repo
 
 A Git repository can be found at https://github.com/fcesc-code/quiz.git

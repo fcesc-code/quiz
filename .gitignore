@@ -46,7 +46,6 @@ firebaseinit.js
 *.tiff
 *.eps
 *.ico
-*.WebP
 *.bmp
 *.ai
 *.mpg
@@ -57,7 +56,8 @@ firebaseinit.js
 *.mp4
 *.ogg
 *.mov
-*.WebM
+*.webm
 *.flac
 *.adts
 *.3gp
+#*.webp
