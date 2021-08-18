@@ -1,7 +1,7 @@
 import renderer from "react-test-renderer";
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Dashboard from "../Dashboard.jsx";
 
 describe("Dashboard snapshot", () => {
@@ -13,9 +13,9 @@ describe("Dashboard snapshot", () => {
 
   test("test whether some category 'Books' has been displayed in the dashboard", async () => {
     render(
-      <Router>
+      <BrowserRouter>
         <Dashboard />
-      </Router>
+      </BrowserRouter>
     );
     const TEXT = "Computers";
     const foundTheme = await screen.findByText(TEXT);

@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 import "../css/header.scss";
 import * as ROUTES from "../config/routes";
 
-const IMAGE = require("../assets/user_icon.png");
-
 function Header() {
   return (
     <>
@@ -40,11 +38,6 @@ function Header() {
               </li>
             </ul>
           </nav>
-          <NavLink activeClassName="my-active-class" to="/login">
-            <div className="login__icon">
-              <img src={IMAGE} alt="" />{" "}
-            </div>
-          </NavLink>
           <NavLink
             activeClassName="my-active-class"
             className="login__button__link"
