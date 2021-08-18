@@ -39,10 +39,9 @@ describe("test set for decoder utility", () => {
 
   test("test random crazy symbols to decaode: ", () => {
     const mockArray = Array.from(TRANSFORMATION_MAP.keys());
-    const mockResults = Array.from(TRANSFORMATION_MAP.values());
     const randomPosition = Math.floor(random() * mockArray.length);
     const input = mockArray[randomPosition];
-    const result = mockResults[randomPosition];
+    const result = TRANSFORMATION_MAP.get(input);
     const decoded = decodeFast(input);
 
     expect(decoded).toMatch(result);
