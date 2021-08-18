@@ -33,7 +33,7 @@ prueba/
 .firebaserc
 #firebase.json
 .firebase/
-firebaseinit.js
+#firebaseinit.js
 
 
 #media files
