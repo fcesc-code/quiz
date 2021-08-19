@@ -5,9 +5,12 @@ import { BrowserRouter } from "react-router-dom";
 import Dashboard from "../Dashboard.jsx";
 
 describe("Dashboard snapshot", () => {
-  const treeDashboard = renderer.create(<Dashboard />);
-
   test("should match", () => {
+    const treeDashboard = renderer.create(
+      <BrowserRouter>
+        <Dashboard />
+      </BrowserRouter>
+    );
     expect(treeDashboard).toMatchSnapshot();
   });
 
