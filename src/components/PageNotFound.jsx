@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
+import "../css/errorpages.scss";
 import * as ROUTES from "../config/routes";
 
 function PageNotFound() {

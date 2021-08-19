@@ -39,7 +39,7 @@ A Git repository can be found at https://github.com/fcesc-code/quiz.git
 
 ### Version 0.2.0
 
-1. ❌ Include a component to notify UI when there is no internet connection or API throws an error
+1. ✔️ Include a component to notify UI when there is no internet connection or API throws an error
 2. ❌ Limit maximum calls of API when error is thrown or connection is broken
 3. ❌ Load mockdata to local run app when there is no internet connection
 4. ✔️ Include GitHub Actions to launch testing for continuous delivery

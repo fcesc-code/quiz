@@ -57,6 +57,7 @@
     },
     "collectCoverageFrom": [
       "src/**/*.{js, jsx, ts, tsx}",
+      "src/**/**/*.snapshot.spec.{js, ts}",
       "!src/index.js",
       "!src/serviceWorker.js"
     ],

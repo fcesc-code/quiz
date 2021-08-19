@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, Redirect } from "react-router-dom";
+import "../css/errorpages.scss";
 import * as ROUTES from "../config/routes";
 
 class ErrorBoundary extends React.Component {
