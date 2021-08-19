@@ -32,10 +32,11 @@ A Git repository can be found at https://github.com/fcesc-code/quiz.git
 
 ## Releases
 
-| Version | Date                 | Content         |
-| ------- | -------------------- | --------------- |
-| 0.1.0   | August 2020          | Initial release |
-| 0.2.0   | November 2020 (est.) | Upgraded UI     |
+| Version | Date                 | Status      | Content         |
+| ------- | -------------------- | ----------- | --------------- |
+| 0.2.0   | November 2021 (est.) | -           | Upgraded UI     |
+| 0.1.1   | August 2021          | pre-release | First           |
+| 0.1.0   | -                    | -           | Initial version |
 
 ### Version 0.2.0
 
