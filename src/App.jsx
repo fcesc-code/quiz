@@ -10,6 +10,7 @@ import Dashboard from "./components/Dashboard.jsx";
 import Question from "./components/Question.jsx";
 import Game from "./components/Game.jsx";
 import Answer from "./components/Answer.jsx";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import * as ROUTES from "./config/routes";
 
 function App() {
@@ -18,13 +19,15 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path={ROUTES.HOME} exact component={Dashboard} />
-          <Route path={ROUTES.LEADERBOARD} component={LeaderBoard} />
-          <Route path={ROUTES.LOGIN} component={LoginScreen} />
-          <Route path={ROUTES.QUESTION} component={Question} />
-          <Route path={ROUTES.THEMES_WILDCARD} component={Game} />
-          <Route path={ROUTES.ANSWER} component={Answer} />
-          <Route component={PageNotFound} />
+          <ErrorBoundary>
+            <Route path={ROUTES.HOME} exact component={Dashboard} />
+            <Route path={ROUTES.LEADERBOARD} component={LeaderBoard} />
+            <Route path={ROUTES.LOGIN} component={LoginScreen} />
+            <Route path={ROUTES.QUESTION} component={Question} />
+            <Route path={ROUTES.THEMES_WILDCARD} component={Game} />
+            <Route path={ROUTES.ANSWER} component={Answer} />
+            <Route component={PageNotFound} />
+          </ErrorBoundary>
         </Switch>
         <Footer />
       </Router>
