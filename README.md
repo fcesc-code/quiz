@@ -82,7 +82,7 @@ This software is currently developed :construction: with educational purposes an
 
 ### How to contribute
 
-Even though we are junior developers, we are open to contributions :simley_cat:
+Even though we are junior developers, we are open to contributions :smiley_cat:
 
 1. Fork this repo.
 2. Make a pull request with your changes.
