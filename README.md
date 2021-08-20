@@ -30,6 +30,11 @@ A Git repository can be found at https://github.com/fcesc-code/quiz.git
 - [HTML](https://html.spec.whatwg.org/)
 - [YAML](https://yaml.org/) for GitHub actions
 
+## Content
+
+- [open trivia](opentdb.com/api.php)
+- [Pexels](https://www.pexels.com/)
+
 ## Releases
 
 | Version | Date                 | Status      | Content         |
