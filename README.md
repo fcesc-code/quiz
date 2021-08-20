@@ -74,6 +74,28 @@ Initial release.
 - [Sonarqube](https://www.sonarqube.org/): 0 bugs | 0 code smells | 0 vulnerabilities | 2 security hotspots | 0% code duplication (excluding duplicated API file requested to separate deliverables)
 - [GitHub codeQL](https://github.com/github/codeql): 0 security alerts [![CodeQL](https://github.com/fcesc-code/quiz/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/fcesc-code/quiz/actions/workflows/codeql-analysis.yml)
 
+## Contributions
+
+### Philosophy
+
+This software is currently developed :construction: with educational purposes and is open source. The code is published in this public repository. Check out the public [LICENSE](https://github.com/fcesc-code/quiz/blob/main/SECURITY.md) :open_book:.
+
+### How to contribute
+
+Even though we are junior developers, we are open to contributions :simley_cat:
+
+1. Fork this repo.
+2. Make a pull request with your changes.
+
+### Issues :fire:
+
+Do you want to suggest :bulb: a new feature? Open an [issue](https://github.com/fcesc-code/quiz/issues).
+Please, keep it short, descriptive and concise :smiley:
+
+### Security
+
+Check out the how to report a vulnerability in our supported versions in the [SECURITY](https://github.com/fcesc-code/quiz/blob/main/SECURITY.md).
+
 ## Available Scripts
 
 In the project directory, you can run:
